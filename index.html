@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +6,12 @@
     <title>IMVU Optimizer v0.8 - Download</title>
     <style>
         /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            background: radial-gradient(circle, #1a1a1a, #000000);
             color: white;
             margin: 0;
             padding: 0;
@@ -24,40 +25,44 @@
             max-width: 600px;
             padding: 30px;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.4);
             animation: fadeIn 1.5s ease-in-out;
             position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            font-family: 'Orbitron', sans-serif;
             color: #00ffcc;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             animation: slideIn 1s ease-in-out;
         }
         p {
-            font-size: 1.1rem;
-            color: #ddd;
+            font-size: 1.2rem;
+            color: #ccc;
             margin-bottom: 20px;
             animation: slideIn 1.2s ease-in-out;
         }
         .download-btn {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 20px;
+            padding: 15px 35px;
+            font-size: 22px;
             color: white;
-            background: linear-gradient(135deg, #00cc66, #009955);
+            background: linear-gradient(135deg, #00cc66, #007744);
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: bold;
             transition: 0.3s;
-            box-shadow: 0 6px 12px rgba(0, 255, 204, 0.5);
-            animation: pulse 1.5s infinite;
+            box-shadow: 0 8px 20px rgba(0, 255, 204, 0.6);
+            animation: pulse 2s infinite;
         }
         .download-btn:hover {
-            background: linear-gradient(135deg, #009955, #007744);
-            box-shadow: 0 8px 16px rgba(0, 255, 204, 0.7);
+            background: linear-gradient(135deg, #009955, #005522);
+            box-shadow: 0 10px 25px rgba(0, 255, 204, 0.8);
         }
         .features {
             text-align: left;
@@ -65,11 +70,28 @@
             padding: 0 20px;
             animation: slideIn 1.4s ease-in-out;
         }
+        .features h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: #00ffcc;
+        }
         .features li {
             font-size: 1.1rem;
             color: #bbb;
             margin: 10px 0;
         }
+        .glow-effect {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: #00ffcc;
+            filter: blur(60px);
+            opacity: 0.7;
+            animation: moveGlow 8s infinite alternate;
+        }
+        .glow1 { top: 10%; left: 10%; }
+        .glow2 { bottom: 15%; right: 15%; }
+        
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: scale(0.9); }
@@ -84,21 +106,27 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        @keyframes moveGlow {
+            from { transform: translate(-20px, -20px); }
+            to { transform: translate(20px, 20px); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="glow-effect glow1"></div>
+        <div class="glow-effect glow2"></div>
         <h1>IMVU Optimizer v0.8</h1>
-        <p>Supercharge your IMVU performance with advanced system optimizations.</p>
+        <p>Supercharge your IMVU experience with cutting-edge performance tweaks.</p>
         <a class="download-btn" href="https://github.com/AceNoctis/imvu-optimizer/releases/download/v0.8/IMVU_Optimizer_Installer.exe" download>
             🚀 Download Now
         </a>
         <div class="features">
             <h2>🔧 Features:</h2>
             <ul>
-                <li>🖥️ Boosts CPU & RAM efficiency for better IMVU performance.</li>
+                <li>🖥️ Boosts CPU & RAM efficiency for top-tier IMVU performance.</li>
                 <li>🎯 Custom FPS limiter to prevent lag & overheating.</li>
-                <li>🚀 Clears unused memory for a seamless experience.</li>
+                <li>🚀 Clears unused memory to maintain smooth gameplay.</li>
                 <li>📡 Advanced network tweaks for ultra-low latency.</li>
                 <li>🔄 Auto-detects IMVU process & provides real-time system stats.</li>
             </ul>
